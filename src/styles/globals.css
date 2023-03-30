@@ -57,15 +57,11 @@
 .swiper-slide img {
   height: 100%;
   object-fit: contain;
+  border-radius: 12px;
 }
 
 .swiper-slide-next,
 .swiper-slide-prev img {
-  background: linear-gradient(
-    360deg,
-    #093093 11.98%,
-    rgba(9, 48, 147, 0) 11.98%
-  );
   mix-blend-mode: normal;
   opacity: 0.7;
   border-radius: 12px;
