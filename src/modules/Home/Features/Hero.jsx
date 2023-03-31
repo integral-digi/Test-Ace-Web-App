@@ -11,6 +11,7 @@ import toeflLogo from "../../../assets/toefl.svg";
 import toeicLogo from "../../../assets/toeic.svg";
 
 // Import Swiper React components
+import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -50,7 +51,16 @@ const Hero = () => {
           </Link>
         </div>
 
-        <Swiper slidesPerView={1.5} spaceBetween={30} className="mySwiper">
+        <Swiper
+          slidesPerView={1.5}
+          spaceBetween={30}
+          className="mySwiper"
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+        >
           <SwiperSlide>
             <Image src={slider1} alt="slider1" width={488} height={580} />
           </SwiperSlide>

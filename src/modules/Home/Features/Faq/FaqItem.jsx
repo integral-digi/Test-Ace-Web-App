@@ -5,8 +5,6 @@ function FaqItem({ title, content, index, openIndex, setOpenIndex }) {
     setOpenIndex(isOpen ? -1 : index);
   }
 
-  console.log(isOpen);
-
   return (
     <div
       className={`lg:w-[700px] border-b border-[#E0EDFD] py-7 ${

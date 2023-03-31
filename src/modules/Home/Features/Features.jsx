@@ -18,7 +18,7 @@ const Features = () => {
             Revolutionary teaching methods
           </p>
           <h1 className="font-primary lg:text-[56px] lg:leading-[150%] mb-10 bannerTitle lg:w-[681px]">
-            Cutting-edge technology
+            Cutting-edge Artificial Intelligence technology
           </h1>
           <p className="text-[#424242] font-secondary text-lg lg:w-[652px]">
             What makes our app unique is its gamified learning experience.
