@@ -40,7 +40,7 @@ const Navbar = () => {
                 : " menu w-full lg:block flex-grow lg:items-center lg:w-auto lg:px-3 px-6 lg:relative absolute lg:top-0 lg:left-0 top-[80px] -left-[110%] transition duration-[0.4s] ease-in-out"
             }
           >
-            <ul class="flex justify-between items-center lg:flex-row flex-col">
+            <ul className="flex justify-between items-center lg:flex-row flex-col">
               <li
                 className="text-[#424242]
                   lg:px-[36px]  font-secondary text-base  lg:p-0 py-2 cursor-pointer"

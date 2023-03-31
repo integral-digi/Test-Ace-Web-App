@@ -1,5 +1,8 @@
+import Faq from "./Features/Faq/Faq";
 import Features from "./Features/Features";
+import GettingStart from "./Features/GettingStart";
 import Hero from "./Features/Hero";
+import Testimonial from "./Features/Testimonial/Testimonial";
 import WhatDo from "./Features/WhatDo";
 
 const Home = () => {
@@ -10,6 +13,9 @@ const Home = () => {
       </div>
       <WhatDo />
       <Features />
+      <Testimonial />
+      <Faq />
+      <GettingStart />
     </>
   );
 };
