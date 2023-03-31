@@ -14,6 +14,7 @@ import toeicLogo from "../../../assets/toeic.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
+import Link from "next/link";
 import "swiper/css";
 
 const Hero = () => {
@@ -38,11 +39,15 @@ const Hero = () => {
             our gamified learning approach, you&apos;ll not only learn faster
             but also have fun doing it.
           </p>
-
-          <button className="bg-[linear-gradient(252.26deg,#771228_-0.27%,#5B1BBD_100%)] rounded-[10px] text-[#FFFFFF] w-[229px] font-primary text-base text-center mt-14 py-4">
-            {" "}
-            Sign up
-          </button>
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdm4l9WiHSz_G6hbGMYv4VrzH-2cxQoaBGpGB42nPNlSleGMQ/viewform"
+            target="_blank"
+          >
+            <button className="bg-[linear-gradient(252.26deg,#771228_-0.27%,#5B1BBD_100%)] rounded-[10px] text-[#FFFFFF] w-[229px] font-primary text-base text-center mt-14 py-4">
+              {" "}
+              Sign up
+            </button>
+          </Link>
         </div>
 
         <Swiper slidesPerView={1.5} spaceBetween={30} className="mySwiper">

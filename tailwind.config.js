@@ -14,6 +14,7 @@ module.exports = {
         primary: "Graphik-bold, cursive",
         secondary: "Graphik-medium, cursive",
         black: "Graphik-black, cursive",
+        semibold: "Graphik-semibold, cursive",
       },
     },
   },

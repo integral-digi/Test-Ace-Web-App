@@ -23,6 +23,13 @@
     font-weight: 900;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "Graphik-semibold";
+    src: url("/fonts/GraphikSemibold.otf");
+    font-weight: 600;
+    font-style: normal;
+  }
 }
 
 .bannerTitle {
