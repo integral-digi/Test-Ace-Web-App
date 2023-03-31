@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         primary: "Graphik-bold, cursive",
         secondary: "Graphik-medium, cursive",
+        black: "Graphik-black, cursive",
       },
     },
   },

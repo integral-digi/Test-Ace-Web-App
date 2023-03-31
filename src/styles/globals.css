@@ -16,6 +16,13 @@
     font-weight: 500;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "Graphik-black";
+    src: url("/fonts/GraphikBlack.otf");
+    font-weight: 900;
+    font-style: normal;
+  }
 }
 
 .bannerTitle {
@@ -26,7 +33,6 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  height: 246px;
 }
 
 .joyStick {
