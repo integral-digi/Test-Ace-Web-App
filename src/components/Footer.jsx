@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ig from "../assets/IG.svg";
+import linkedin from "../assets/Linkedin.svg";
 import yt from "../assets/YT.svg";
 import facebook from "../assets/facebook.svg";
 import github from "../assets/github.svg";
-import linkedin from "../assets/linkedin.svg";
 import logo from "../assets/logo.svg";
 import twitter from "../assets/twitter.svg";
 
