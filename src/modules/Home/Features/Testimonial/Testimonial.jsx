@@ -87,6 +87,7 @@ const Testimonial = () => {
         {/* it's for mobile  */}
         <Swiper
           spaceBetween={30}
+          slidesPerView={1}
           className="!shadow-none !rounded-none !h-[850px]"
           // autoplay={{
           //   delay: 2500,
@@ -94,47 +95,38 @@ const Testimonial = () => {
           // }}
           pagination={true}
           modules={[Autoplay, Pagination]}
-          breakpoints={{
-            // when window width is >= 1024px (desktop)
-            1024: {
-              slidesPerView: 1.5,
-            },
-            // when window width is <= 867px (mobile)
-            867: {
-              slidesPerView: 1,
-            },
-          }}
         >
           {testimonials?.map((data, index) => (
             <SwiperSlide
-              className="z-50 absolute  left-0 container mx-auto  pl-9 pr-8 overflow-hidden mt-10 !shadow-none"
+              className="z-50 absolute w-full left-0 pl-6 pr-8 overflow-hidden mt-10 !shadow-none"
               key={index}
             >
-              <div className="">
-                <Image
-                  src={data.imageMob}
-                  alt={data.name}
-                  width={384}
-                  height={313}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-
-              <div className="flex mt-6 bg-transparent space-x-5">
-                <div className="w-12 h-12">
-                  <Image src={quote} alt="quote" width={48} height={48} />
+              <div className=" flex flex-col justify-center items-center w-full">
+                <div className="w-[384px] h-[313px]">
+                  <Image
+                    src={data.imageMob}
+                    alt={data.name}
+                    width={384}
+                    height={313}
+                  />
                 </div>
 
-                <div className="bg-transparent">
-                  <h1 className="text-[#1A191B] font-primary text-2xl">
-                    {data.name}
-                  </h1>
-                  <p className="text-[#555867] w-[245px] font-secondary text-base">
-                    {data.description}
-                  </p>
-                  <button className=" font-primary cursor-pointer text-base bg-[linear-gradient(252.26deg,#771228_-0.27%,#5B1BBD_100%)] px-16 py-4 rounded-[8px] text-white	mt-8">
-                    Read More
-                  </button>
+                <div className="flex mt-6 bg-transparent space-x-5">
+                  <div className="w-12 h-12">
+                    <Image src={quote} alt="quote" width={48} height={48} />
+                  </div>
+
+                  <div className="bg-transparent">
+                    <h1 className="text-[#1A191B] font-primary text-2xl">
+                      {data.name}
+                    </h1>
+                    <p className="text-[#555867] w-[245px] font-secondary text-base">
+                      {data.description}
+                    </p>
+                    <button className=" font-primary cursor-pointer text-base bg-[linear-gradient(252.26deg,#771228_-0.27%,#5B1BBD_100%)] px-16 py-4 rounded-[8px] text-white	mt-8">
+                      Read More
+                    </button>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
