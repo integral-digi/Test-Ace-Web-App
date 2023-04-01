@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className=" container mx-auto pl-9 pr-8 ">
+      <div className=" container mx-auto pl-9 pr-8  ">
         <div className="flex pt-[75px] flex-wrap justify-between items-start h-full">
           <div>
             <div className="w-[140px] h-[18px] mb-10">
@@ -40,8 +40,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex md:gap-[100px] flex-wrap mt-[90px] lg:m-0">
-            <div className="flex flex-col mr-[150px]">
+          <div className="flex md:gap-[100px] flex-wrap mt-[50px] lg:m-0">
+            <div className="flex flex-col mr-[110px] lg:mr-[150px]">
               <h2 className="font-secondary text-base text-[#53616E] mb-6">
                 About
               </h2>
@@ -58,7 +58,7 @@ const Footer = () => {
                 <Link href="/">Contact</Link>
               </span>
             </div>
-            <div className="flex flex-col mr-[150px]">
+            <div className="flex flex-col mr-[110px] lg:mr-[150px]">
               <h2 className="font-secondary text-base text-[#53616E] mb-6">
                 Product
               </h2>
@@ -105,16 +105,16 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full">
-        <div className="container mx-auto flex justify-between items-center pl-9 pr-8">
-          <h2 className="text-right font-secondary text-[13px] leading-[144px] text-[#424242]">
+        <div className="container mx-auto lg:flex-row flex-col-reverse flex justify-between items-center pl-9 pr-8 w-full mt-9 lg:mt-0">
+          <h2 className="lg:text-right lg:w-auto text-left w-full font-secondary text-[13px] leading-[144px] text-[#424242]">
             © {year} Test Extraordinaire Inc. All rights reserved.
           </h2>
-          <div className="flex items-center justify-between lg:w-[48%]">
-            <p className="font-secondary text-[#424242] text-sm">
+          <div className="flex items-center justify-between w-full lg:w-[48%]">
+            <p className="font-secondary text-[#424242] text-sm hidden lg:flex">
               hello@test-ace.com
             </p>
 
-            <div className="md:flex hidden lg:space-x-10">
+            <div className="flex lg:justify-normal justify-start w-full lg:w-auto lg:space-x-10 space-x-6">
               <span className="text-right font-secondary font-normal text-[13px] leading-[14px]  text-[#424242]">
                 Privacy Policy{" "}
               </span>

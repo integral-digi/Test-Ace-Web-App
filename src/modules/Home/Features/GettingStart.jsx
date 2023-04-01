@@ -6,11 +6,11 @@ import gettingStart from "../../../assets/gettingStartimg.svg";
 const GettingStart = () => {
   return (
     <div className="bg-[#EDF9FF]">
-      <div className="flex flex-col justify-center items-center container mx-auto pl-9 pr-8 ">
-        <h1 className="bannerTitle font-black lg:w-[695px] lg:text-[56px] lg:leading-[150%] mt-[85px] text-center">
+      <div className="flex flex-col justify-center items-center container mx-auto pl-9 pr-8 pb-[51px] lg:pb-0">
+        <h1 className="bannerTitle font-black lg:w-[695px] text-[32px] leading-[100%] lg:text-[56px] lg:leading-[150%] mt-[85px] text-center">
           Getting started is easy, so why wait?
         </h1>
-        <p className="text-[#545777] text-base font-semibold mt-4">
+        <p className="text-[#545777] text-base font-semibold lg:mt-4 mt-6 text-center">
           Download Test Ace today and start learning the fun way!
         </p>
         <div className="flex mt-10 space-x-5">
@@ -22,7 +22,7 @@ const GettingStart = () => {
           </button>
         </div>
 
-        <div className="flex w-full justify-center mt-10">
+        <div className=" w-full justify-center mt-10 hidden lg:flex">
           <Image
             src={gettingStart}
             alt="gettingStart"

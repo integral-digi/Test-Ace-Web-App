@@ -33,6 +33,7 @@ export const testimonials = [
     description:
       "I'm so grateful to Jordan and the team for the college admission services I received from the company. Thanks to their help, I was able to gain entry to Cornell, one of my top choice schools. The process was so much easier with their guidance and support. I highly recommend their services.......",
     image: "/assets/rota.svg",
+    imageMob: "/assets/rotaMob.svg",
   },
   {
     id: 2,
@@ -40,12 +41,14 @@ export const testimonials = [
     description:
       "Thanks Test Extraordinaire for the SAT prep courses I took before applying to UC Irvine. Rainbow is a very knowledgeable, thoughtful, and experienced instructor who helped me understand the test and gave me strategies to use on test day. Thanks to her guidance, I was able to....",
     image: "/assets/shing.svg",
+    imageMob: "/assets/shingMob.svg",
   },
   {
     id: 3,
     name: "Jamie",
     description: "Good teachers. Thank you for everything!",
     image: "/assets/jamie.svg",
+    imageMob: "/assets/jamieMob.svg",
   },
   {
     id: 4,
@@ -53,6 +56,7 @@ export const testimonials = [
     description:
       " This app is a game changer. I was able to get my score up significantly in a short amount of time. Thanks to Test Ace",
     image: "/assets/jane.svg",
+    imageMob: "/assets/janeMob.svg",
   },
   {
     id: 5,
@@ -60,5 +64,6 @@ export const testimonials = [
     description:
       "Awesome experience so far, I feel more prepared for my TOEFL test and it’s thanks to Test Ace.",
     image: "/assets/biden.svg",
+    imageMob: "/assets/bidenMob.svg",
   },
 ];
