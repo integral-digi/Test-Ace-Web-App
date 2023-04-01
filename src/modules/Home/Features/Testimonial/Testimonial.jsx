@@ -12,10 +12,6 @@ const Testimonial = () => {
     setFilteredData(filtered);
   };
 
-  console.log(selectData);
-
-  // console.log(testimonials?.filter((data) => data.name !== selectData));
-
   return (
     <div className="flex flex-col justify-center items-center container mx-auto pl-9 pr-8 my-[137px] ">
       <p className="text-[#1777CB] font-secondary text-2xl ">Testimonials</p>

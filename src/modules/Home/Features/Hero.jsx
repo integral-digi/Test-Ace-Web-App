@@ -17,14 +17,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import Link from "next/link";
 import "swiper/css";
+import "swiper/swiper-bundle.css";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col container mx-auto pl-9 pr-8">
-      <div className=" w-full overflow-hidden flex justify-between items-center mt-[170px] rounded-[12px]">
-        <div className="">
+    <div className="flex flex-col flex-wrap container mx-auto pl-9 pr-8">
+      <div className=" w-full overflow-hidden flex justify-between items-center flex-wrap md:flex-nowrap mt-[100px] lg:mt-[170px] rounded-[12px]">
+        <div className="mb-20 lg:mb-0">
           <div className=" flex items-end justify-between ">
-            <h1 className=" font-primary font-bold text-[82px] leading-[100%] lg:w-[780px] mt-[63px] lg:h-[246px] bannerTitle">
+            <h1 className=" font-primary font-bold text-5xl w-full md:w-[390px] lg:text-[82px] leading-[100%] lg:w-[780px] mt-[63px] lg:h-[246px] bannerTitle">
               Gamified learning for top performing students
               <Image
                 src={joyStick}
@@ -35,7 +36,7 @@ const Hero = () => {
               />
             </h1>
           </div>
-          <p className="text-[#424242] mt-6 font-secondary text-lg lg:w-[506px] w-[390px]">
+          <p className="text-[#424242] mt-6 font-secondary text-lg lg:w-[506px] w-[340px]">
             Test Ace is a mobile app that revolutionizes the way you learn! With
             our gamified learning approach, you&apos;ll not only learn faster
             but also have fun doing it.
@@ -44,7 +45,7 @@ const Hero = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSdm4l9WiHSz_G6hbGMYv4VrzH-2cxQoaBGpGB42nPNlSleGMQ/viewform"
             target="_blank"
           >
-            <button className="bg-[linear-gradient(252.26deg,#771228_-0.27%,#5B1BBD_100%)] rounded-[10px] text-[#FFFFFF] w-[229px] font-primary text-base text-center mt-14 py-4">
+            <button className="bg-[linear-gradient(252.26deg,#771228_-0.27%,#5B1BBD_100%)] rounded-[10px] text-[#FFFFFF] w-[229px] font-primary text-base text-center mt-6 lg:mt-14 py-4">
               {" "}
               Sign up
             </button>
@@ -52,27 +53,37 @@ const Hero = () => {
         </div>
 
         <Swiper
-          slidesPerView={1.5}
+          // slidesPerView={1.5}
           spaceBetween={30}
           className="mySwiper"
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
           modules={[Autoplay]}
+          breakpoints={{
+            // when window width is >= 1024px (desktop)
+            1024: {
+              slidesPerView: 1.5,
+            },
+            // when window width is <= 867px (mobile)
+            867: {
+              slidesPerView: 1,
+            },
+          }}
         >
-          <SwiperSlide>
-            <Image src={slider1} alt="slider1" width={488} height={580} />
+          <SwiperSlide className="">
+            <Image src={slider1} alt="slider1" width="100%" height="100%" />
           </SwiperSlide>
-          <SwiperSlide>
-            <Image src={slider2} alt="slider1" width={488} height={627} />
+          <SwiperSlide className="">
+            <Image src={slider2} alt="slider2" width="100%" height="100%" />
           </SwiperSlide>
-          <SwiperSlide>
-            <Image src={slider3} alt="slider1" width={488} height={627} />
+          <SwiperSlide className="">
+            <Image src={slider3} alt="slider3" width="100%" height="100%" />
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="flex justify-between items-center mt-[120px]">
+      <div className="flex justify-between items-center mt-20 mb-12 lg:mb-0 lg:mt-[120px] overflow-x-scroll overflow-y-auto space-x-[50px] lg:space-x-0 overflow-hidden scrollbar-hide">
         <Image src={satLogo} alt={satLogo} width={92} height={35} />
         <Image src={iteltsLogo} alt={iteltsLogo} width={120} height={35} />
         <Image src={toeflLogo} alt={toeflLogo} width={180} height={35} />
