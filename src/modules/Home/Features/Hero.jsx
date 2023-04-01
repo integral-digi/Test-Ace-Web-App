@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import actLogo from "../../../assets/act.svg";
 import greLogo from "../../../assets/gre.svg";
 import iteltsLogo from "../../../assets/ielts.svg";
@@ -15,7 +16,6 @@ import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import Link from "next/link";
 import "swiper/css";
 import "swiper/swiper-bundle.css";
 
