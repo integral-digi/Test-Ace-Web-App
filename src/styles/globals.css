@@ -100,3 +100,8 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.box {
+  opacity: 1;
+  transition: opacity 0.5s;
+}

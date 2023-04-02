@@ -80,7 +80,7 @@ const Footer = () => {
                 <Link href="/">GRE</Link>
               </span>
             </div>
-            <div className=" flex-col lg:mt-0 xl:mt-0  mt-10 flex">
+            <div className="flex flex-col ">
               <h2 className="font-secondary text-base text-[#53616E] mb-6">
                 Company
               </h2>
