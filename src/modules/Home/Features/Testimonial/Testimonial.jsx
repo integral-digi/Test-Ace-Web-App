@@ -1,8 +1,8 @@
+// import { motion } from "framer-motion";
 import { useState } from "react";
 import quote from "../../../../assets/quote.svg";
 import { testimonials } from "../../config/config";
 import TestimonialItem from "./TestimonialItem";
-
 // Import Swiper React components
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -67,19 +67,23 @@ const Testimonial = () => {
             </ul>
           </div>
 
-          {filteredData.length === 0
-            ? testimonials
-                .slice(0, 1)
-                .map((data, index) => (
-                  <TestimonialItem data={data} key={index} />
-                ))
-            : filteredData?.map((data, index) => (
-                <TestimonialItem
-                  data={data}
-                  key={index}
-                  handleClick={handleClick}
-                />
-              ))}
+          <div
+            className={`flex items-center relative w-full transition-all duration-500 `}
+          >
+            {filteredData.length === 0
+              ? testimonials
+                  .slice(0, 1)
+                  .map((data, index) => (
+                    <TestimonialItem data={data} key={index} />
+                  ))
+              : filteredData?.map((data, index) => (
+                  <TestimonialItem
+                    data={data}
+                    key={index}
+                    handleClick={handleClick}
+                  />
+                ))}
+          </div>
         </div>
       </div>
 
@@ -89,10 +93,10 @@ const Testimonial = () => {
           spaceBetween={30}
           slidesPerView={1}
           className="!shadow-none !rounded-none !h-[850px]"
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           pagination={true}
           modules={[Autoplay, Pagination]}
         >
