@@ -1,5 +1,9 @@
+// external import
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
+// external images
 import actLogo from "../../../assets/act.svg";
 import greLogo from "../../../assets/gre.svg";
 import iteltsLogo from "../../../assets/ielts.svg";
@@ -10,7 +14,6 @@ import slider2 from "../../../assets/sliderImg2.svg";
 import slider3 from "../../../assets/sliderImg3.svg";
 import toeflLogo from "../../../assets/toefl.svg";
 import toeicLogo from "../../../assets/toeic.svg";
-
 // Import Swiper React components
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,7 +24,12 @@ import "swiper/swiper-bundle.css";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col flex-wrap container mx-auto pl-9 pr-8">
+    <motion.div
+      className="flex flex-col flex-wrap container mx-auto pl-9 pr-8"
+      initial={{ x: "-100vw" }}
+      animate={{ x: 0 }}
+      transition={{ type: "tween", duration: 1, bounce: 0.2 }}
+    >
       <div className=" w-full overflow-hidden flex justify-between items-center flex-wrap md:flex-nowrap mt-[100px] lg:mt-[170px] rounded-[12px]">
         <div className="mb-20 lg:mb-0">
           <div className=" flex items-end justify-between ">
@@ -53,13 +61,12 @@ const Hero = () => {
         </div>
 
         <Swiper
-          // slidesPerView={1.5}
           spaceBetween={30}
           className="mySwiper"
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           modules={[Autoplay]}
           breakpoints={{
             // when window width is >= 1024px (desktop)
@@ -83,7 +90,7 @@ const Hero = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="flex justify-between items-center mt-20 mb-12 lg:mb-0 lg:mt-[120px] overflow-x-scroll overflow-y-auto space-x-[50px] lg:space-x-0 overflow-hidden scrollbar-hide">
+      <div className="flex justify-between items-center mt-10  lg:pb-0 lg:mt-[140px] overflow-x-scroll overflow-y-auto space-x-[50px] lg:space-x-0 overflow-hidden scrollbar-hide">
         <Image src={satLogo} alt={satLogo} width={92} height={35} />
         <Image src={iteltsLogo} alt={iteltsLogo} width={120} height={35} />
         <Image src={toeflLogo} alt={toeflLogo} width={180} height={35} />
@@ -91,7 +98,7 @@ const Hero = () => {
         <Image src={actLogo} alt={satLogo} width={135} height={35} />
         <Image src={greLogo} alt={satLogo} width={145} height={35} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
