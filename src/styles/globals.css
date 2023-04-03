@@ -87,10 +87,10 @@
   width: 100%;
 }
 
-.careerSingleSlider.swiper-slide-next,
-.swiper-slide-prev img {
-  height: auto;
-  width: auto;
+.testimonialSlider.swiper-slide-next,
+.swiper-slide-prev {
+  height: 384px !important;
+  width: auto !important;
 }
 
 @media only screen and (max-width: 450px) {

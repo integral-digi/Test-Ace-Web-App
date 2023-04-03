@@ -5,8 +5,8 @@ import Navbar from "../Navbar";
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="flex w-full justify-center items-center my-7 space-x-6">
-        <h1 className="text-black font-secondary text-base ">
+      <div className="fixed bg-white flex w-full flex-wrap justify-center items-center py-7 z-50 space-x-6">
+        <h1 className="text-black font-secondary lg:text-base text-sm text-center">
           Join Test-Ace&apos;s{" "}
           <span className="text-[#1777CB] underline decoration-[#1777CB]">
             waitlist{" "}

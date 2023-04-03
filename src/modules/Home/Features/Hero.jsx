@@ -30,7 +30,7 @@ const Hero = () => {
       animate={{ x: 0 }}
       transition={{ type: "tween", duration: 1, bounce: 0.2 }}
     >
-      <div className=" w-full overflow-hidden flex justify-between items-center flex-wrap md:flex-nowrap mt-[100px] lg:mt-[170px] rounded-[12px]">
+      <div className=" w-full overflow-hidden flex justify-between items-center flex-wrap md:flex-nowrap mt-[200px] lg:mt-[170px] rounded-[12px]">
         <div className="mb-20 lg:mb-0">
           <div className=" flex items-end justify-between ">
             <h1 className=" font-primary font-bold text-5xl w-full md:w-[390px] 2xl:text-[82px] lg:text-[70px] 3xl:text-[82px] leading-[100%] lg:w-[700px] 2xl:w-[780px] mt-[63px] lg:h-[246px] bannerTitle">
