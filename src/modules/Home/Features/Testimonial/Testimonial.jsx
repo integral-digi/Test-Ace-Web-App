@@ -23,7 +23,6 @@ const Testimonial = () => {
   useEffect(() => {
     const filtered = testimonials?.filter((item) => item.name === selectData);
     setFilteredData(filtered);
-    console.log(selectData);
   }, [selectData]);
 
   return (
@@ -73,22 +72,23 @@ const Testimonial = () => {
           <div
             className={`flex items-center relative w-full transition-all duration-500 `}
           >
-            {filteredData?.length === 0
-              ? testimonials
-                  ?.slice(0, 1)
-                  ?.map((data, index) => (
-                    <TestimonialItem data={data} key={index} />
-                  ))
-              : filteredData?.map((data, index) => (
-                  <TestimonialItem
-                    data={data}
-                    key={index}
-                    handleClick={handleClick}
-                  />
+            {filteredData?.length === 0 &&
+              testimonials
+                ?.slice(0, 1)
+                ?.map((data, index) => (
+                  <TestimonialItem data={data} key={index} />
                 ))}
+
+            {filteredData?.length > 0 &&
+              filteredData?.map((data, index) => (
+                <TestimonialItem
+                  data={data}
+                  key={index}
+                  handleClick={handleClick}
+                />
+              ))}
           </div>
         </div>
-        );
       </div>
 
       <div className="bg-[#F6FCFF] h-[870px]  lg:hidden flex justify-center ">

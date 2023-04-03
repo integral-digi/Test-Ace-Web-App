@@ -90,7 +90,7 @@ const Hero = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="flex justify-between items-center my-10 lg:pb-0 lg:mt-[140px] lg:mb-[70px] overflow-x-scroll overflow-y-auto space-x-[50px] lg:space-x-0 overflow-hidden scrollbar-hide">
+      <div className="flex justify-between items-center my-10 lg:pb-0 lg:mt-[140px] lg:mb-0 overflow-x-scroll overflow-y-auto space-x-[50px] lg:space-x-0 overflow-hidden scrollbar-hide">
         <Image src={satLogo} alt={satLogo} width={92} height={35} />
         <Image src={iteltsLogo} alt={iteltsLogo} width={120} height={35} />
         <Image src={toeflLogo} alt={toeflLogo} width={180} height={35} />

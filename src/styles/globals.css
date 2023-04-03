@@ -47,6 +47,10 @@
   vertical-align: middle !important;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 .mySwiper {
   width: 100%;
   height: 100%;
