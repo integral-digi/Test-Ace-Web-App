@@ -1,5 +1,5 @@
 // import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import quote from "../../../../assets/quote.svg";
 import { testimonials } from "../../config/config";
 import TestimonialItem from "./TestimonialItem";
@@ -18,9 +18,13 @@ const Testimonial = () => {
 
   const handleClick = (event) => {
     setselectData(event);
-    const filtered = testimonials.filter((item) => item.name === event);
-    setFilteredData(filtered);
   };
+
+  useEffect(() => {
+    const filtered = testimonials?.filter((item) => item.name === selectData);
+    setFilteredData(filtered);
+    console.log(selectData);
+  }, [selectData]);
 
   return (
     <div className="-z-50">
@@ -35,9 +39,8 @@ const Testimonial = () => {
           user, Rota, saw his TOEFL score increase by 200 points after using our
           app for just 3 weeks. Imagine what our app can do for you!
         </p>
-
         {/* it's for desktop  */}
-        <div className="lg:flex  w-full hidden ">
+        <div className="lg:flex w-full hidden">
           <div className="w-[308px] shadow-[0px_40px_60px_rgba(0,0,0,0.05)] px-12 pt-[64px] h-[430px]">
             <ul className="">
               {testimonials?.map((data, index) => (
@@ -70,10 +73,10 @@ const Testimonial = () => {
           <div
             className={`flex items-center relative w-full transition-all duration-500 `}
           >
-            {filteredData.length === 0
+            {filteredData?.length === 0
               ? testimonials
-                  .slice(0, 1)
-                  .map((data, index) => (
+                  ?.slice(0, 1)
+                  ?.map((data, index) => (
                     <TestimonialItem data={data} key={index} />
                   ))
               : filteredData?.map((data, index) => (
@@ -85,6 +88,7 @@ const Testimonial = () => {
                 ))}
           </div>
         </div>
+        );
       </div>
 
       <div className="bg-[#F6FCFF] h-[870px]  lg:hidden flex justify-center ">
