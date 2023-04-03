@@ -8,7 +8,7 @@ import WhatDo from "./Features/WhatDo";
 const Home = () => {
   return (
     <>
-      <div className="bg-[#EDF9FF] lg:h-[1024px] md:h-[813px] ">
+      <div className="bg-[#EDF9FF] lg:h-[1064px] md:h-[813px] ">
         <Hero />
       </div>
       <WhatDo />
