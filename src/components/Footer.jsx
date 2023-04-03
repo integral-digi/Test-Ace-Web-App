@@ -114,16 +114,18 @@ const Footer = () => {
               hello@test-ace.com
             </p>
 
-            <div className="flex lg:justify-normal justify-start w-full lg:w-auto lg:space-x-10 space-x-6">
+            <div className="flex lg:justify-normal items-center justify-start w-full lg:w-auto lg:space-x-10 space-x-6">
               <span className="text-right font-secondary font-normal text-[13px] leading-[14px]  text-[#424242]">
                 Privacy Policy{" "}
               </span>
               <span className="text-right font-secondary font-normal text-[13px] leading-[14px]  text-[#424242]">
                 Terms of Service
               </span>
-              <span className="text-right font-secondary font-normal text-[13px] leading-[14px]  text-[#424242]">
-                Careers
-              </span>
+              <Link href="/career">
+                <span className="text-right font-secondary font-normal text-[13px] leading-[14px]  text-[#424242]">
+                  Careers
+                </span>
+              </Link>
             </div>
           </div>
         </div>
