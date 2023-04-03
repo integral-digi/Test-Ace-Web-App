@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="absolute top-0 z-50 w-full py-10 ">
+    <div className="absolute top-14 z-50 w-full py-10 ">
       <div className="mx-auto container flex items-center justify-between flex-wrap lg:flex-nowrap px-5 lg:px-10">
         <div className="flex items-center justify-between lg:w-auto w-full lg:border-b-0  ">
           <Link href="/">
