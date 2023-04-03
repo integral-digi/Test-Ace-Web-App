@@ -16,9 +16,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="absolute top-14 z-50 w-full py-10 ">
-      <div className="mx-auto container flex items-center justify-between flex-wrap lg:flex-nowrap px-5 lg:px-10">
-        <div className="flex items-center justify-between lg:w-auto w-full lg:border-b-0  ">
+    <div className="absolute lg:top-14 top-32 w-full py-10 z-50">
+      <div className="mx-auto container flex items-center justify-between flex-wrap lg:flex-nowrap px-9 lg:px-10">
+        <div className="flex items-center justify-between lg:w-auto w-full lg:border-b-0 ">
           <Link href="/">
             <div className="flex items-center flex-shrink-0  cursor-pointer">
               <Image src={logo} alt="logo" />
