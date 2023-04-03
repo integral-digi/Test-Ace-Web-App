@@ -91,31 +91,32 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <div className="bg-[#F6FCFF] h-[870px]  lg:hidden flex justify-center ">
+      <div className="bg-[#F6FCFF] h-[870px]  lg:hidden flex justify-evenly ">
         {/* it's for mobile  */}
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
           className="!shadow-none !rounded-none !h-[850px]"
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
           pagination={true}
           modules={[Autoplay, Pagination]}
         >
           {testimonials?.map((data, index) => (
             <SwiperSlide
-              className="z-50 absolute w-full left-0 pl-6 pr-8 overflow-hidden mt-10 !shadow-none"
+              className="z-50 absolute h-[full] w-full left-0 pl-6 pr-8 overflow-hidden mt-10 !shadow-none testimonialSlider"
               key={index}
             >
               <div className=" flex flex-col justify-center items-center w-full">
-                <div className="w-[384px] h-[313px]">
+                <div className="w-[384px] h-[370px]">
                   <Image
                     src={data.imageMob}
                     alt={data.name}
                     width={384}
                     height={313}
+                    className="w-full h-full contain"
                   />
                 </div>
 
