@@ -21,11 +21,11 @@ const Features = () => {
             Cutting-edge Artificial Intelligence technology
           </h1>
           <p className="text-[#424242] font-secondary text-lg lg:w-[652px]">
-            What makes our app unique is its gamified learning experience.
-            You&apos;ll earn points, badges, and rewards as you complete lessons
-            and quizzes, motivating you to learn more and stay engaged. Our app
-            also includes fun mini-games that reinforce what you&apos;ve learned
-            and provide a break from traditional studying.
+            What makes our app unique is its gamified learning experience. You
+            will earn points, badges, and Practice Scores as you progress
+            through the variety of gamified material. Our app also includes
+            flashcards and review mode that reinforce what you have learned, and
+            provide a break from the hard stuff.
           </p>
           <button className="text-[#2C5282] font-semibold text-lg px-4 py-3 flex items-center justify-between mt-6 lg:mt-12 rounded-[5px] w-[170px] relative before:-z-50 before:block before:-inset-1 before:w-[50%] before:bg-[#F6FCFF] before:absolute before:top-0 before:left-0 before:transition-all before:duration-200 before:ease-in-out hover:before:w-[100%] before:rounded-[5px]">
             Learn More
@@ -46,16 +46,16 @@ const Features = () => {
             <span className="mb-10 block">
               Looking for a fun way to motivate yourself and your friends to
               study harder? Test Ace has you covered! Our app includes a unique
-              friend-challenge feature that lets you connect with friends and
-              challenge them to see who can earn more points and badges.
+              challenge feature that lets you connect with friends or random
+              users globally, and challenge them to see who can earn the highest
+              score. Make international friends and see who wins!
             </span>
 
             <span>
-              Whether you&apos;re preparing for TOEFL Reading, IELTS Listening,
-              SAT Maths, or any other exam, our friend-challenge feature is a
-              great way to keep yourself and your friends engaged and motivated.
-              Plus, you&apos;ll be able to see each other&apos;s progress and
-              provide support and encouragement along the way.
+              Our challenge feature is a great way to get matched with other
+              users of your level, and keep yourself and your friends engaged
+              and motivated. Plus, you will be able to provide support and
+              encouragement to your friends along the way.
             </span>
           </p>
           <button className="text-[#2C5282] font-semibold text-lg px-4 py-3 flex items-center justify-between mt-6 lg:mt-12 rounded-[5px] w-[170px] relative before:-z-50 before:block before:-inset-1 before:w-[50%] before:bg-[#F6FCFF] before:absolute before:top-0 before:left-0 before:transition-all before:duration-200 before:ease-in-out hover:before:w-[100%] before:rounded-[5px]">
@@ -82,9 +82,9 @@ const Features = () => {
           </h1>
           <p className="text-[#424242] font-secondary text-lg lg:w-[652px]">
             Our app is available for download on both iOS and Android devices,
-            making it easy for you to learn on the go. Plus, with our affordable
-            pricing plans, you can get access to premium features without
-            breaking the bank.
+            making it easy for you to learn on the go, completely free! We also
+            offer premium membership for those students who want to work hard to
+            earn their high scores.
           </p>
           <div className="flex mt-12 space-x-5">
             <button>
