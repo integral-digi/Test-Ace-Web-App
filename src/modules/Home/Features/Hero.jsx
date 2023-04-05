@@ -33,8 +33,9 @@ const Hero = () => {
       <div className=" w-full overflow-hidden flex justify-between items-center flex-wrap md:flex-nowrap mt-[200px] lg:mt-[170px] rounded-[12px]">
         <div className="mb-20 lg:mb-0">
           <div className=" flex items-end justify-between ">
-            <h1 className=" font-primary font-bold text-5xl w-full md:w-[390px] 2xl:text-[82px] lg:text-[70px] 3xl:text-[82px] leading-[100%] lg:w-[700px] 2xl:w-[780px] mt-[63px] lg:h-[246px] bannerTitle">
-              Gamified learning for top performing students
+            <h1 className=" font-primary font-bold text-5xl w-full md:w-[390px] 2xl:text-[76px] lg:text-[70px] leading-[100%] lg:w-[700px] 2xl:w-[780px] mt-[63px]  bannerTitle">
+              Gamified learning for top performing students- Ielts, Toefl, &
+              Toeic.
               <Image
                 src={joyStick}
                 alt="joystick.svg"
@@ -44,10 +45,11 @@ const Hero = () => {
               />
             </h1>
           </div>
-          <p className="text-[#424242] mt-6 font-secondary text-lg lg:w-[506px] w-[340px]">
+          <p className="text-[#424242] mt-6 font-secondary text-lg lg:w-[618px] w-[340px]">
             Test Ace is a mobile app that revolutionizes the way you learn! With
-            our gamified learning approach, you&apos;ll not only learn faster
-            but also have fun doing it.
+            our gamified learning approach, you&apos;ll have fun learning
+            faster, starting from a beginner level all the way to a perfect
+            score!
           </p>
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSdm4l9WiHSz_G6hbGMYv4VrzH-2cxQoaBGpGB42nPNlSleGMQ/viewform"
@@ -63,10 +65,10 @@ const Hero = () => {
         <Swiper
           spaceBetween={30}
           className="mySwiper"
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
           modules={[Autoplay]}
           breakpoints={{
             // when window width is >= 1024px (desktop)
@@ -80,13 +82,31 @@ const Hero = () => {
           }}
         >
           <SwiperSlide className="singleSlider">
-            <Image src={slider1} alt="slider1" width="100%" height="100%" />
+            <Image
+              src={slider1}
+              alt="slider1"
+              width="100%"
+              height="100%"
+              className="w-full h-full"
+            />
           </SwiperSlide>
           <SwiperSlide className="singleSlider">
-            <Image src={slider2} alt="slider2" width="100%" height="100%" />
+            <Image
+              src={slider2}
+              alt="slider2"
+              width="100%"
+              height="100%"
+              className="w-full h-full"
+            />
           </SwiperSlide>
           <SwiperSlide className="singleSlider">
-            <Image src={slider3} alt="slider3" width="100%" height="100%" />
+            <Image
+              src={slider3}
+              alt="slider3"
+              width="100%"
+              height="100%"
+              className="w-full h-full"
+            />
           </SwiperSlide>
         </Swiper>
       </div>
