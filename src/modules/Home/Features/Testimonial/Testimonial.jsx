@@ -30,13 +30,15 @@ const Testimonial = () => {
       <div className="flex flex-col justify-center items-center container mx-auto pl-9 pr-8 my-[137px] ">
         <p className="text-[#1777CB] font-secondary text-2xl ">Testimonials</p>
         <h1 className="font-primary text-[32px] leading-[100%] lg:text-[56px] lg:leading-[100%] w-full text-center my-6 bannerTitle">
-          Trusted by students in some of the best colleges
+          Brought to you by the tutoring experts at Test Extraordinaire!
         </h1>
-        <p className="text-[#4E4B59] font-semibold text-lg w-full lg:w-[1048px] mb-11 text-center">
-          But don&apos;t just take our word for it. Our users have seen
-          significant improvements in their exam scores after using our app. One
-          user, Rota, saw his TOEFL score increase by 200 points after using our
-          app for just 3 weeks. Imagine what our app can do for you!
+        <p className="text-[#4E4B59] font-semibold text-lg w-full lg:w-[1162px] mb-11 text-center">
+          With over 25 years of combined tutoring experience, the experts at
+          Test Extraordinaire are crafting a variety of TOEFL/IELTS/TOEIC
+          material to suit your goals and to fit your level. Whether you&apos;re
+          a beginner just getting started working toward your goals, or an
+          advanced student hoping to add a few more points to your score,
+          Test-Ace has engaging and practical material just for you!
         </p>
         {/* it's for desktop  */}
         <div className="lg:flex w-full hidden">
@@ -97,10 +99,10 @@ const Testimonial = () => {
           spaceBetween={30}
           slidesPerView={1}
           className="!shadow-none !rounded-none !h-[850px]"
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           pagination={true}
           modules={[Autoplay, Pagination]}
         >
